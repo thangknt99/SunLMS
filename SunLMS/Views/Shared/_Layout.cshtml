@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+<!--begin::Head-->
+<head>
+    <base href="">
+    <meta charset="utf-8" />
+    <title>Metronic Live preview | Keenthemes</title>
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Updates and statistics" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--begin::Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <!--end::Fonts-->
+    <!--begin::Page Vendors Styles(used by this page)-->
+    <link href=@Url.Content("~/Content/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css?v=1") rel="stylesheet" type="text/css" />
+    <!--end::Page Vendors Styles-->
+    <!--begin::Global Theme Styles(used by all pages)-->
+    <link href=@Url.Content("~/Content/assets/plugins/global/plugins.bundle.css?v=1") rel="stylesheet" type="text/css" />
+    <link href=@Url.Content("~/Content/assets/plugins/custom/prismjs/prismjs.bundle.css?v=1") rel="stylesheet" type="text/css" />
+    <link href=@Url.Content("~/Content/assets/css/style.bundle.css?v=1") rel="stylesheet" type="text/css" />
+    <!--end::Global Theme Styles-->
+    <!--begin::Layout Themes(used by all pages)-->
+    <!--end::Layout Themes-->
+    <link rel="shortcut icon" href=@Url.Content("~/Content/assets/media/logos/favicon.ico") />
+    @*@Styles.Render("~/Content/css")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+<body id="kt_body" class="header-mobile-fixed subheader-enabled aside-enabled aside-fixed aside-secondary-enabled page-loading">
+    <!--begin::Main-->
+    <!--begin::Header Mobile-->
+    <div id="kt_header_mobile" class="header-mobile">
+        <!--begin::Logo-->
+        <a href="@Url.Action("Index","Home")">
+            <img alt="Logo" src=@Url.Content("~/Content/assets/media/logos/logo-letter-2.png") class="logo-default max-h-30px" />
+        </a>
+        <!--end::Logo-->
+        <!--begin::Toolbar-->
+        <div class="d-flex align-items-center">
+            <button class="btn p-0 burger-icon burger-icon-left" id="kt_aside_mobile_toggle">
+                <span></span>
+            </button>
+        </div>
+        <!--end::Toolbar-->
+    </div>
+    <!--end::Header Mobile-->
+    <div class="d-flex flex-column flex-root">
+        <!--begin::Page-->
+        <div class="d-flex flex-row flex-column-fluid page">
+            <!--begin::Aside-->
+            <div class="aside aside-left d-flex aside-fixed" id="kt_aside">
+                <!--begin::Primary-->
+                @Html.Partial("Partial/_PrimaryPartial")
+                <!--end::Primary-->
+                <!--begin::Secondary-->
+                @Html.Partial("Partial/_SecondaryPartial")
+                <!--end::Secondary-->
+            </div>
+            <!--end::Aside-->
+            <!--begin::Wrapper-->
+            <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+                <!--begin::Content-->
+                <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                    <!--begin::Subheader-->
+                    @Html.Partial("Partial/_SubheaderPartial")
+                    <!--end::Subheader-->
+                    <!--begin::Entry-->
+                    <div class="d-flex flex-column-fluid">
+                        <!--begin::Container-->
+                        <div class="container">
+                            @RenderBody()
+                        </div>
+                        <!--end::Container-->
+                    </div>
+                    <!--end::Entry-->
+                </div>
+                <!--end::Content-->
+                <!--begin::Footer-->
+                <!--doc: add "bg-white" class to have footer with solod background color-->
+                <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+                    <!--begin::Container-->
+                    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                        <!--begin::Copyright-->
+                        <div class="text-dark order-2 order-md-1">
+                            <span class="text-muted font-weight-bold mr-2">2021©</span>
+                            <a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">Keenthemes</a>
+                        </div>
+                        <!--end::Copyright-->
+                        <!--begin::Nav-->
+                        <div class="nav nav-dark order-1 order-md-2">
+                            <a href="@Url.Action("About","Home")" target="_blank" class="nav-link pr-3 pl-0">About</a>
+                            <a href="@Url.Action("Team","Home")" target="_blank" class="nav-link px-3">Team</a>
+                            <a href="@Url.Action("Contact","Home")" target="_blank" class="nav-link pl-3 pr-0">Contact</a>
+                        </div>
+                        <!--end::Nav-->
+                    </div>
+                    <!--end::Container-->
+                </div>
+                <!--end::Footer-->
+            </div>
+            <!--end::Wrapper-->
+        </div>
+        <!--end::Page-->
+    </div>
+    <!--end::Main-->
+    <!--begin::Quick Actions Panel-->
+    @Html.Partial("Partial/_QuickActionsPanelPartial")
+    <!--end::Quick Actions Panel-->
+    <!-- begin::User Panel-->
+    @Html.Partial("Partial/_UserPanelPartial")
+    <!-- end::User Panel-->
+    <!--begin::Quick Panel-->
+    @Html.Partial("Partial/_QuickPanelPartial")
+    <!--end::Quick Panel-->
+    <!--begin::Chat Panel-->
+    @Html.Partial("Partial/_ChatPanelPartial")
+    <!--end::Chat Panel-->
+    <!--begin::Scrolltop-->
+    <div id="kt_scrolltop" class="scrolltop">
+        <span class="svg-icon">
+            <!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <polygon points="0 0 24 0 24 24 0 24" />
+                    <rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+                    <path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+                </g>
+            </svg>
+            <!--end::Svg Icon-->
+        </span>
+    </div>
+    <!--end::Scrolltop-->
+    <!--begin::Sticky Toolbar-->
+    <ul class="sticky-toolbar nav flex-column pl-2 pr-2 pt-3 pb-3 mt-4">
+        <!--begin::Item-->
+        <li class="nav-item mb-2" id="kt_demo_panel_toggle" data-toggle="tooltip" title="Check out more demos" data-placement="right">
+            <a class="btn btn-sm btn-icon btn-bg-light btn-icon-success btn-hover-success" href="#">
+                <i class="flaticon2-drop"></i>
+            </a>
+        </li>
+        <!--end::Item-->
+        <!--begin::Item-->
+        <li class="nav-item mb-2" data-toggle="tooltip" title="Layout Builder" data-placement="left">
+            <a class="btn btn-sm btn-icon btn-bg-light btn-icon-primary btn-hover-primary" href="https://preview.keenthemes.com/metronic/demo3/builder.html" target="_blank">
+                <i class="flaticon2-gear"></i>
+            </a>
+        </li>
+        <!--end::Item-->
+        <!--begin::Item-->
+        <li class="nav-item mb-2" data-toggle="tooltip" title="Documentation" data-placement="left">
+            <a class="btn btn-sm btn-icon btn-bg-light btn-icon-warning btn-hover-warning" href="https://keenthemes.com/metronic/?page=docs" target="_blank">
+                <i class="flaticon2-telegram-logo"></i>
+            </a>
+        </li>
+        <!--end::Item-->
+        <!--begin::Item-->
+        <li class="nav-item" id="kt_sticky_toolbar_chat_toggler" data-toggle="tooltip" title="Chat Example" data-placement="left">
+            <a class="btn btn-sm btn-icon btn-bg-light btn-icon-danger btn-hover-danger" href="#" data-toggle="modal" data-target="#kt_chat_modal">
+                <i class="flaticon2-chat-1"></i>
+            </a>
+        </li>
+        <!--end::Item-->
+    </ul>
+    <!--end::Sticky Toolbar-->
+    <!--begin::Demo Panel-->
+    <div id="kt_demo_panel" class="offcanvas offcanvas-right p-10">
+        <!--begin::Header-->
+        <div class="offcanvas-header d-flex align-items-center justify-content-between pb-7">
+            <h4 class="font-weight-bold m-0">Select A Demo</h4>
+            <a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_demo_panel_close">
+                <i class="ki ki-close icon-xs text-muted"></i>
+            </a>
+        </div>
+        <!--end::Header-->
+        <!--begin::Content-->
+        <div class="offcanvas-content">
+            <!--begin::Wrapper-->
+            <div class="offcanvas-wrapper mb-5 scroll-pull">
+                <h5 class="font-weight-bold mb-4 text-center">Demo 1</h5>
+                <div class="overlay rounded-lg mb-8 offcanvas-demo">
+                    <div class="overlay-wrapper rounded-lg">
+                        <img src=@Url.Content("~/Content/assets/media/demos/demo1.png") alt="" class="w-100" />
+                    </div>
+                    <div class="overlay-layer">
+                        <a href="../../demo1/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+                        <a href="https://preview.keenthemes.com/metronic/demo1/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
+                    </div>
+                </div>
+                <h5 class="font-weight-bold mb-4 text-center">Demo 2</h5>
+                <div class="overlay rounded-lg mb-8 offcanvas-demo">
+                    <div class="overlay-wrapper rounded-lg">
+                        <img src=@Url.Content("~/Content/assets/media/demos/demo2.png") alt="" class="w-100" />
+                    </div>
+                    <div class="overlay-layer">
+                        <a href="../../demo2/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+                        <a href="https://preview.keenthemes.com/metronic/demo2/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
+                    </div>
+                </div>
+                <h5 class="font-weight-bold mb-4 text-center">Demo 3</h5>
+                <div class="overlay rounded-lg mb-8 offcanvas-demo offcanvas-demo-active">
+                    <div class="overlay-wrapper rounded-lg">
+                        <img src=@Url.Content("~/Content/assets/media/demos/demo3.png") alt="" class="w-100" />
+                    </div>
+                    <div class="overlay-layer">
+                        <a href="../../demo3/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+                        <a href="https://preview.keenthemes.com/metronic/demo3/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
+                    </div>
+                </div>
+                <h5 class="font-weight-bold mb-4 text-center">Demo 4</h5>
+                <div class="overlay rounded-lg mb-8 offcanvas-demo">
+                    <div class="overlay-wrapper rounded-lg">
+                        <img src=@Url.Content("~/Content/assets/media/demos/demo4.png") alt="" class="w-100" />
+                    </div>
+                    <div class="overlay-layer">
+                        <a href="../../demo4/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+                        <a href="https://preview.keenthemes.com/metronic/demo4/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
+                    </div>
+                </div>
+                <h5 class="font-weight-bold mb-4 text-center">Demo 5</h5>
+                <div class="overlay rounded-lg mb-8 offcanvas-demo">
+                    <div class="overlay-wrapper rounded-lg">
+                        <img src=@Url.Content("~/Content/assets/media/demos/demo5.png") alt="" class="w-100" />
+                    </div>
+                    <div class="overlay-layer">
+                        <a href="../../demo5/dist" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">Default</a>
+                        <a href="https://preview.keenthemes.com/metronic/demo5/rtl/index.html" class="btn btn-white btn-text-primary btn-hover-primary font-weight-boldest text-center min-w-75px shadow" target="_blank">RTL Version</a>
+                    </div>
+                </div>
+            </div>
+            <!--end::Wrapper-->
+            <!--begin::Purchase-->
+            <div class="offcanvas-footer">
+                <a href="#" target="_blank" class="btn btn-block btn-danger btn-shadow font-weight-bolder text-uppercase">Buy Metronic Now!</a>
+            </div>
+            <!--end::Purchase-->
+        </div>
+        <!--end::Content-->
+    </div>
+    <!--end::Demo Panel-->
+    <script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
+    <!--begin::Global Config(global config for global JS scripts)-->
+    <script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#1BC5BD", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#6993FF", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#1BC5BD", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#E1E9FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
+    <!--end::Global Config-->
+    <!--begin::Global Theme Bundle(used by all pages)-->
+    <script src=@Url.Content("~/Content/assets/plugins/global/plugins.bundle.js?v=1")></script>
+    <script src=@Url.Content("~/Content/assets/plugins/custom/prismjs/prismjs.bundle.js?v=1")></script>
+    <script src=@Url.Content("~/Content/assets/js/scripts.bundle.js?v=1")></script>
+    <!--end::Global Theme Bundle-->
+    <!--begin::Page Vendors(used by this page)-->
+    <script src=@Url.Content("~/Content/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=1")></script>
+    <!--end::Page Vendors-->
+    <!--begin::Page Scripts(used by this page)-->
+    <script src=@Url.Content("~/Content/assets/js/pages/widgets.js?v=1")></script>
+    <!--end::Page Scripts-->
+    @*@Html.Partial("_LoginPartial")*@
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+</body>
+<!--end::Body-->
+
+</html>

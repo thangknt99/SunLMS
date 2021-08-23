@@ -1,0 +1,17 @@
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\SunLMS.Bussiness.dll
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\SunLMS.Bussiness.pdb
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\obj\Debug\SunLMS.Bussiness.csproj.AssemblyReference.cache
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\obj\Debug\SunLMS.Bussiness.csproj.CoreCompileInputs.cache
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\obj\Debug\SunLMS.Bussiness.dll
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\obj\Debug\SunLMS.Bussiness.pdb
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\SunLMS.Bussiness.dll.config
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\EntityFramework.dll
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\EntityFramework.SqlServer.dll
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\SunLMS.Database.dll
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\SunLMS.Model.dll
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\SunLMS.Database.pdb
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\SunLMS.Database.dll.config
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\SunLMS.Model.pdb
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\EntityFramework.xml
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\bin\Debug\EntityFramework.SqlServer.xml
+D:\01.TienLv-CNTT\01.Project\05.SunLMS\SunLMS\SunLMS.Bussiness\obj\Debug\SunLMS.Bussiness.csproj.CopyComplete
